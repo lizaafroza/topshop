@@ -27,4 +27,10 @@ Route::get('/', 'HomeController@index');
 // Backend site....................
 Route::get('/admin', 'AdminController@index');
 Route::get('/dashboard', 'AdminController@show_dashboard');
-Route::POST('/admin-dashboard','AdminController@dashboard');
+Route::post('/admin-dashboard','AdminController@dashboard');
+
+//category route
+
+Route::get('/add-category','CategoryController@index');
+Route::get('/all-category','CategoryController@all_category');
+Route::get('/save-category','CategoryController@save_category');
